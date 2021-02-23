@@ -12,7 +12,7 @@ SRCREV = "241e4896e2f2ee77883bdd6f1e404bf9e9df52f7"
 
 S = "${WORKDIR}/git"
 
-DEPENDS += "${@bb.utils.contains('DISTRO_FEATURES','bluez5','bluez5','bluez4',d)}"
+DEPENDS += "${@bb.utils.contains('DISTRO_FEATURES','bluez5','bluez5','bluez5',d)}"
 
 RRECOMMENDS_${PN} = "lwb-backports-laird"
 
